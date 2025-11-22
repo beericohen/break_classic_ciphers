@@ -22,7 +22,7 @@ def compare_trigrams(trigrams1, trigrams2):
     set1 = set(trigram for trigram, count in trigrams1)
     set2 = set(trigram for trigram, count in trigrams2)
     shared = set1.intersection(set2)
-    return len(shared)
+    return shared
 
 ENGLISH_FREQ = {
     'a': 0.08167, 'b': 0.01492, 'c': 0.02782, 'd': 0.04253, 'e': 0.12702,
